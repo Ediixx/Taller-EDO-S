@@ -32,7 +32,7 @@ def ODE_euler(
     *,
     a: float,
     b: float,
-    f: Callable[[float, float], float],
+    f: Callable[[float, float], float], #2 inputs, 1 output def f(t, y)
     y_t0: float,
     N: int,
 ) -> tuple[list[float], list[float], float]:
